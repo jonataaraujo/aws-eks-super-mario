@@ -5,7 +5,7 @@
 terraform {
   backend "s3" {
     bucket = "my-bucket"
-    key    = "tf/k8s-super-mario.tfstate"
+    key    = "tf/terraform.tfstate"
     region = "us-east-1"
   }
 }

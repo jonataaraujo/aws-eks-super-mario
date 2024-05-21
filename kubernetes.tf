@@ -7,6 +7,7 @@ resource "kubernetes_namespace" "main" {
     name = "mario-deployment"
   }
 }
+
 resource "kubernetes_deployment" "main" {
   metadata {
     name      = "mario-deployment"
