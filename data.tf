@@ -33,8 +33,3 @@ data "aws_eks_cluster" "main" {
 data "aws_eks_cluster_auth" "main" {
   name = aws_eks_cluster.main.id
 }
-
-data "aws_route53_zone" "main" {
-  name         = var.domain
-  private_zone = false
-}
